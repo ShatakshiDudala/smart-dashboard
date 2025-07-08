@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Center</title>
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<body>
+   <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="map.html">🗺️ Store Map</a>
+    <a href="feedback.html">📝 Feedback</a>
+  </nav>
+  <h1>📝 Share Your Thoughts!</h1>
+
+  <div class="feedback-panel">
+    <div class="stars" id="star-container">
+      ★★★★★
+    </div>
+
+    <textarea placeholder="What do you love? What can we improve?" id="commentBox"></textarea>
+
+    <button onclick="submitFeedback()">Submit Feedback</button>
+    <p id="statusMsg"></p>
+  </div>
+
+  <script src="feedback.js"></script>
+</body>
+</html>

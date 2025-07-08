@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+   <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="map.html">🗺️ Store Map</a>
+    <a href="feedback.html">📝 Feedback</a>
+  </nav>
+  <header>
+    <h1>📊 Supply Chain AI Insights</h1>
+  </header>
+
+  <section class="ai-suggestions">
+    <h2>AI Predictions for Next Week</h2>
+    <ul id="suggestions-list">
+      <!-- JS will inject data -->
+    </ul>
+  </section>
+
+  <section class="charts">
+    <h2>Top-Demand Items</h2>
+    <canvas id="demandChart" width="400" height="200"></canvas>
+  </section>
+
+  <section class="highlight">
+    <h2>🌟 Featured Item</h2>
+    <p id="featuredItem">Loading...</p>
+    <button onclick="refreshFeaturedItem()">Refresh Suggestion</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

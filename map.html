@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store Demand Map</title>
+  <link rel="stylesheet" href="map.css" />
+</head>
+<body>
+   <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="map.html">🗺️ Store Map</a>
+    <a href="feedback.html">📝 Feedback</a>
+  </nav>
+  <h1>🛒 Store Demand Overview</h1>
+  <div class="map-container">
+    <div class="zone high" onclick="showInfo('Zone A: High Demand')">A</div>
+    <div class="zone medium" onclick="showInfo('Zone B: Moderate Demand')">B</div>
+    <div class="zone low" onclick="showInfo('Zone C: Low Demand')">C</div>
+  </div>
+  <p id="zone-info">Click on a zone to view details.</p>
+  <script src="map.js"></script>
+</body>
+</html>
