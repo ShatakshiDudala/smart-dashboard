@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #dee2e6);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+.navbar {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.navbar a:hover,
+.navbar .active {
+  background: #555;
+}
+
+.landing {
+  margin-top: 50px;
+}
+
+button {
+  background: #0077b6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
